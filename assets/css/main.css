@@ -1,0 +1,347 @@
+@font-face {
+    font-family: "Circular-Std";
+    src: url("../fonts/circular-std-book/CircularStd-Book.otf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf"), url("../fonts/Montserrat/Montserrat-Bold.ttf"), url("../fonts/Montserrat/Montserrat-Black.ttf"), url("../fonts/Montserrat/Montserrat-BlackItalic.ttf"), url("../fonts/Montserrat/Montserrat-BoldItalic.ttf"), url("../fonts/Montserrat/Montserrat-Italic.ttf"), url("../fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Beyno";
+    src: url("../fonts/BEYNO/BEYNO.otf");
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#landing {
+    background: url(../../assets/img/bg1.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+html:before {
+    position: absolute;
+    content: '';
+    background: red;
+}
+
+body {
+    background: rgba(0, 0, 0, 0);
+}
+
+
+/****************
+HELPER CLASSES
+******************/
+
+.nav-link {
+    text-transform: uppercase;
+    color: #ffffff !important;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.bg-grey {
+    background: rgb(0, 0, 0);
+}
+
+.bg-lightgrey {
+    background: #EBEBEC;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+
+/****************
+NAVBAR 
+******************/
+
+.navbar {
+    padding-top: 20px;
+    padding-right: 50px;
+    color: #ffd700 !important;
+}
+
+.navbar-brand {
+    font-family: "Beyno";
+}
+
+.navbar ul li a {
+    color: #ffd700 !important;
+}
+
+
+/****************
+BODY
+******************/
+
+.contain {
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    padding-top: 20px;
+    height: 100%;
+    /* height: calc(100%/3); */
+    background: rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.banner div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 20px;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    /* height: calc(830px/3); */
+    height: 100%;
+}
+
+.middle div {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+.middle p {
+    margin: 70px 20px 0;
+    text-align: center;
+}
+
+.middle img {
+    width: 200px;
+    height: 200px;
+    margin: 30px 0 30px;
+    text-align: center;
+}
+
+.bottom {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-self: auto;
+    color: #fff;
+    /* height: calc(830px/3); */
+    height: 100%;
+    padding-top: 50px;
+}
+
+.bottom__para__one,
+.bottom__para__two {
+    text-transform: uppercase;
+}
+
+.bottom__para__one {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.bottom__para__two {
+    font-size: .8rem;
+}
+
+.bottom__list {
+    list-style: none;
+    padding: 30px;
+}
+
+.bottom__list li {
+    padding: 20px;
+}
+
+
+/* .bottom__list span p {
+    margin: 0;
+    text-align: center;
+} */
+
+.bottom__links {
+    display: flex;
+    justify-content: center;
+    text-decoration: #ffd700;
+}
+
+.bottom__links span {
+    margin: 10px;
+}
+
+.bottom__links span a {
+    text-decoration: none;
+    color: #ffd700;
+}
+
+.bottom__links span a:hover {
+    color: #fff;
+}
+
+.bottom__list span {
+    color: #ffd700;
+    text-transform: capitalize;
+}
+
+.bottom__logo img {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+
+/****************
+LOGIN
+******************/
+
+.details {
+    padding-top: 5rem;
+    /* padding-bottom: 20%; */
+    width: 80%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.details h1 {
+    font-weight: 900;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.login {
+    /* height: calc(444px - (444px * 0.01)); */
+    width: 90%;
+    /* border: 2px solid #ddd; */
+    margin-bottom: -10px;
+    background-color: #fff;
+    padding-top: 1rem;
+}
+
+.login h3 {
+    font-weight: 700;
+}
+
+.login a {
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.login__body {
+    background: #474a59;
+    /* height: 50%; */
+}
+
+.details hr {
+    border: 1px solid #ffffff;
+    margin: -20px 0;
+}
+
+.input__field {
+    background: #474a59;
+    border: transparent;
+    color: #fff;
+    margin: 30px 0;
+    height: 3rem;
+    width: 100%;
+}
+
+.input__field:placeholder-shown {
+    border-color: transparent;
+}
+
+.login__body input::placeholder {
+    color: #fff;
+}
+
+.login__body a {
+    font-size: .75em;
+}
+
+.login__body__checkbox {
+    font-size: .75em;
+    margin-left: .5em;
+    margin-right: 1.2em;
+}
+
+.form__verification {
+    margin: 2rem 0;
+}
+
+.form__verification__inline {
+    margin: 2rem 0;
+}
+
+.mybtn {
+    display: block;
+    margin: 0 auto;
+    width: 9rem;
+    height: 3rem;
+    border-bottom-color: #ffd700;
+}
+
+
+/****************
+FOOTER 
+******************/
+
+footer {
+    background: rgb(0, 0, 0);
+}
+
+[class *="footer__list"] {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px 0 0;
+    color: #ffd700;
+}
+
+.footer__logo {
+    margin: 0 20px;
+}
+
+.footer__list {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: .8em;
+}
